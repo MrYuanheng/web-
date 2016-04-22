@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <title>用户注册</title>
+    <style type="text/css">
+        *{padding: 0;margin: 0;list-style-type: none;text-decoration: none;}
+        #content{width: 1263px;height: 1240px;margin: 0 auto;background-color: cyan;}
+        #banner{width: 100%;height: 300px; margin: 0 auto;background-image: url("images/hhh.png");background-size: 100% 100%;text-align: center;font-family: 宋体; font-size: 50px;}
+        #main{width: 100%;height: 800px;margin: 5px  auto;padding-top: 50px; background-image: url("images/aaa.jpg");background-size: 100% 100%;}
+        #header{width: 100%;height: 130px;margin: 0 auto;background-color: blueviolet;text-align: center;}
+        #nav li a{color:white;}
+        #nav li a:hover{color: red;}
+        #head1{width: 800px;height: 50px; ;margin: 0 auto;line-height: 50px;}
+        .select{width: 150px;height: 25px;}
+        .head2{width: 600px;height: 30px;text-align: center;color: white; line-height: 30px;margin:0 auto;}
+        .head2 a{color: white;}
+        .head2 a:hover{color: cyan;}
+        #pp{width: 1150px; font-size: 16px;margin-bottom:40px;text-align: right;color: blueviolet;}
+        #pp a{color: blueviolet;}
+        #pp a:hover{color: red;}
+        #mains{width: 600px;height: 30px;margin: 0 auto; }
+        .mains_div{width:180px;height:30px;margin-left: 15px; text-align: center;color: darkgray; line-height: 30px;font-size: 20px;font-weight: bold; float: left;}
+        .order{float: left;width: 30px;margin-left: 20px; height: 30px;color: white; border-radius:15px;background-color: dimgray;}
+        #strip{width: 600px;height: 5px;margin: 15px auto;}
+        .strip_1{width:200px;height: 5px;background-color:darkgray;float: left; }
+        #dis{width: 600px;height: 700px;border: 2px solid darkgrey;margin: 0 auto;position: relative;}
+        #dis1{width: 600px;height: 700px;position: absolute;display: block;}
+        #left1{width: 180px;height: 300px;float: left;text-align: right;margin-top: 100px}
+        #center1{width: 200px;height: 300px;float: left;text-align: center;margin-top: 100px}
+        #right1{width: 200px;height: 300px;float: left;margin-top: 100px;color: red;}
+        #user{width: 180px;height: 30px;}
+        #password{width: 180px;height: 30px;}
+        #pass{width: 180px;height: 30px;}
+        #left1 p{line-height: 30px;font-size: 20px;}
+        #right1 p{line-height: 30px;font-size: 14px;}
+        .but1{width: 60px;height: 30px;color: crimson;font-weight: bold;font-size: 16px;margin-top: 100px;cursor: pointer;}
+        #dis2{width: 600px;height: 700px;font-size: 18px; position: absolute;display: none;}
+        #left2{width: 180px;height: 700px;float: left;text-align: right}
+        #center2{width: 200px;height: 700px;float: left;text-align: center}
+        #right2{width: 200px;height: 700px;float: left;}
+        #left2 p{line-height: 24px;}
+        input{height: 22px;border: 1px solid dimgray;}
+        .but2{width: 60px;height: 30px;color: crimson;font-weight: bold;font-size: 16px;margin-top: 20px;cursor: pointer;}
+        #dis3{width: 600px;height: 700px;padding-top: 100px; font-family: 宋体; color: red;font-weight: bold;text-align: center; position: absolute;display: none;}
+        #right2 p{line-height: 24px;color: red;}
+    </style>
+    <script type="text/javascript" src="js2.js" charset="gb2312"></script>
+</head>
+<body>
+  <div id="content">
+      <div id="banner">
+          <div id="pp"><a href="">登录</a> | <a href="">注册</a> | <a href="">学校官网</a> | <a href="">关于网站</a> | <a href="">返回首页</a></div>
+          <p>用户注册</p>
+      </div>
+      <div id="main">
+          <div id="mains">
+              <div class="mains_div" style="color: red;">
+                  <div class="order">1</div> 注册账号
+              </div>
+              <div class="mains_div">
+                  <div class="order">2</div> 个人信息
+              </div>
+              <div class="mains_div">
+                  <div class="order">3</div> 注册成功
+              </div>
+          </div>
+          <div id="strip">
+              <div style="background-color: red;" class="strip_1"></div><div class="strip_1"></div><div class="strip_1"></div>
+          </div>
+          <div id="dis">
+              <div id="dis1">
+                  <form action="www.baidu.com" onsubmit="submit1()"  method="post">
+                      <div id="left1"><br/>
+                          <p>请输入账号：</p><br/>
+                          <p>请输入密码：</p><br/>
+                          <p>再次输入密码：</p>
+                      </div>
+                      <div id="center1"><br/>
+                          <p><input type="text" onblur="us();" id="user"> </p><br/>
+                          <p><input type="password" onblur="pa();" id="password"></p><br/>
+                          <p><input type="password" onblur="pas();" id="pass"> </p>
+
+                          <input class="but1" type="reset" value="重 置">
+                          <input class="but1" type="submit" value="下一步">
+                      </div>
+                      <div id="right1"><br/>
+                          <p id="p1">设置用户名</p><br/>
+                          <p id="p2">设置八位数字密码</p><br/>
+                          <p id="p3"></p>
+                      </div>
+                  </form>
+              </div>
+              <div id="dis2">
+                  <form action="" onsubmit=""  method="get">
+                      <div id="left2"><br/>
+                          <p>姓名：</p><br/>
+                          <p>性别：</p><br/>
+                          <p>出生年月：</p><br/>
+                          <p>籍贯：</p><br/>
+                          <p>特长：</p><br/>
+                          <p>兴趣爱好：</p><br/>
+                          <p>联系电话：</p><br/>
+                          <p>Email ：</p><br/>
+                          <p>个人简介：</p><br/>
+                      </div>
+                      <div id="center2"><br/>
+                          <p><input type="text" onblur="" id="name"> </p><br/>
+                          <p><input type="radio" onblur="" class="gender" name="g" value="男"> 男
+                              <input type="radio" onblur="" class="gender" name="g" value="女"> 女</p><br/>
+                          <p>
+                              <select>
+                                  <option>1990</option><option>1991</option><option>1992</option><option>1993</option>
+                                  <option>1994</option><option>1995</option><option>1996</option><option>1997</option>
+                                  <option>1998</option><option>1999</option><option>2000</option><option>2001</option>
+                              </select>年
+                              <select>
+                                  <option>01</option><option>02</option><option>03</option><option>04</option>
+                                  <option>05</option><option>06</option><option>07</option><option>08</option>
+                                  <option>09</option><option>10</option><option>11</option><option>12</option>
+                              </select>月
+                              <select>
+                                  <option>01</option><option>02</option><option>03</option><option>04</option>
+                                  <option>05</option><option>06</option><option>07</option><option>08</option>
+                                  <option>09</option><option>10</option><option>11</option><option>12</option>
+                                  <option>13</option><option>14</option><option>15</option><option>16</option>
+                                  <option>17</option><option>18</option><option>19</option><option>20</option>
+                                  <option>21</option><option>22</option><option>23</option><option>24</option>
+                                  <option>25</option><option>26</option><option>27</option><option>28</option>
+                                  <option>29</option><option>30</option><option>31</option>
+                              </select>日
+                          </p><br/>
+                          <p><input type="text" id="home"></p><br/>
+                          <p><input type="text" id="specialty"></p><br/>
+                          <p><input type="text" id="hobby"></p><br/>
+                          <p><input type="text" id="phone"></p><br/>
+                          <p><input type="text" id="qq"></p><br/>
+                          <p><textarea id="text" rows="8px" cols="35px"></textarea></p><br/>
+                          <input class="but2" type="reset" value="重 置">
+                          <input class="but2" type="submit" value="提交">
+
+                      </div>
+                      <div id="right2"><br/>
+                          <p id="pp1">*</p><br/>
+                          <p id="pp2">*</p><br/>
+                          <p id="pp3">*</p><br/>
+                          <p id="pp4">*</p><br/>
+                          <p id="pp5">*</p><br/>
+                          <p id="pp6">*</p><br/>
+                          <p id="pp7">*</p><br/>
+                          <p id="pp8">*</p><br/>
+                      </div>
+                  </form>
+              </div>
+              <div id="dis3">
+                  <p>恭喜你 </p><br/>
+                  <p style="font-size: 25px;"> 注 册 成 功！</p><br/>
+                  <a href=""><button>点击返回登录</button></a>
+
+              </div>
+          </div>
+      </div>
+      <div id="header">
+            <div id="head1">
+                <select class="select">
+                    <option>省教育厅网站</option>
+                </select>
+                <select class="select">
+                    <option>学校官方网站</option>
+                </select>
+                <select class="select">
+                    <option>院系网站</option>
+                </select>
+                <select class="select">
+                    <option>校园论坛</option>
+                </select>
+                <select class="select">
+                    <option>本地网站</option>
+                </select>
+            </div>
+          <div class="head2">
+              <a href="">关于我们</a> | <a href="">网站声明</a> | <a href="">校园官网</a> | <a href="">返回首页</a>
+          </div>
+          <div class="head2">陕PIC备10005858号</div>
+      </div>
+  </div>
+
+</body>
+</html>
